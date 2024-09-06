@@ -13,10 +13,18 @@ int main()
 	float result;
 
 	printf("Please enter first number:\n");
-	scanf("%d", &num1);
+	
+	if(scanf("%d", &num1) != 1){
+		printf("Invalid input! Please input an integer next time!\n");
+		return 1;
+	}
 	
 	printf("Please enter second number:\n");
-	scanf("%d", &num2);
+	
+	if(scanf("%d", &num2) != 1){
+		printf("Invalid input! Please input an integer next time!\n");
+		return 1;
+	}
 	
 	printf("Please input the selected operation you want to perform (+, -, *, /):\n");
 	scanf(" %c", &operation);
@@ -30,7 +38,7 @@ int main()
 	else if (operation == '/')
 			division(num1, num2);
 	else 
-			printf("Invalid! TRY AGAIN!\n");
+			printf("Invalid operation. Please use one of the four operations only. (+ - * /)!\n");
 		
 	return 0;
 }
