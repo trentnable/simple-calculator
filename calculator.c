@@ -14,12 +14,24 @@ int main()
 
 	printf("Please enter first number:\n");
 	scanf("%d", &num1);
+	
 	printf("Please enter second number:\n");
 	scanf("%d", &num2);
-	addition(num1, num2);
-	subtraction(num1, num2);
-	multiplication(num1, num2);
-	division(num1, num2);
+	
+	printf("Please input the selected operation you want to perform (+, -, *, /):\n");
+	scanf(" %c", &operation);
+	
+	if (operation == '+')
+			addition(num1, num2);
+	else if (operation == '-')
+			subtraction(num1, num2);
+	else if (operation == '*')
+			multiplication(num1, num2);
+	else if (operation == '/')
+			division(num1, num2);
+	else 
+			printf("Invalid! TRY AGAIN!\n");
+		
 	return 0;
 }
 int addition(int a, int b) {
