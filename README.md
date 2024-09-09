@@ -1,0 +1,1 @@
+This repo contains a simple calculator programmed in C. Addition, subtraction, multiplication, and division is performed with help of functions. User can provide 2 numbers, then choose the symbol for their desired operation (+, -, *, /). Based on those inputs, the program will perform required calculation.
